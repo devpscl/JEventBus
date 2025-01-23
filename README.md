@@ -1,5 +1,21 @@
+<img src="https://img.shields.io/static/v1?label=JDK&message=17%2B&color=3495eb&logoColor=white" alt="JDK" />
+
 # JEventBus
-Simple and lightweight event bus system.
+Simple and lightweight event bus library written in java.
+
+# Usage Gradle
+
+```groovy
+repositories {
+  maven {
+    url "https://repo.devpscl.de/repository/public"
+  }
+}
+
+dependencies {
+    implementation("net.devpscl:jeventbus:1.0.0")
+}
+```
 
 # Example
 
