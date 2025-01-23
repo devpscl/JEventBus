@@ -21,7 +21,7 @@ class BuilderImpl implements EventBus.Builder {
   }
 
   @Override
-  public @NotNull EventBus create() {
+  public @NotNull EventBus build() {
     return new EventBusImpl(enablePriorities, errorHandler);
   }
 }

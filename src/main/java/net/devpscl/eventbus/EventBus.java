@@ -57,6 +57,7 @@ public interface EventBus {
    * The configuration owner is set to {@code eventHandlerObject}.
    * If listener priorities property enabled in builder, the listeners are sorted by lowest to highest priority.
    * The priority can set with annotation constant {@link SubscribeEvent#priority()}.
+   * The tag filter is recommend for multiple event buses.
    *
    * @param eventHandlerObject the event handler object
    * @param tag                the tag
@@ -139,7 +140,7 @@ public interface EventBus {
      *
      * @return the event bus
      */
-    @NotNull EventBus create();
+    @NotNull EventBus build();
 
   }
 
