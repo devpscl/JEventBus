@@ -3,6 +3,20 @@
 # JEventBus
 Simple and lightweight event bus library written in java.
 
+# Usage Gradle
+
+```groovy
+dependencies {
+    implementation("net.devpscl:jeventbus:1.0.0")
+}
+
+repositories {
+  maven {
+    url "https://repo.devpscl.de/repository/public"
+  }
+}
+```
+
 # Example
 
 ### Initialize event bus
