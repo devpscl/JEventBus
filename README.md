@@ -1,7 +1,7 @@
 <img src="https://img.shields.io/static/v1?label=JDK&message=17%2B&color=3495eb&logoColor=white" alt="JDK" />
 
 # JEventBus
-Simple and lightweight event bus system.
+Simple and lightweight event bus library written in java.
 
 # Example
 
