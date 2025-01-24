@@ -9,7 +9,7 @@ class BuilderImpl implements EventBus.Builder {
   private boolean enablePriorities = false;
 
   @Override
-  public EventBus.@NotNull Builder errorHandler(@NotNull ErrorHandler errorHandler) {
+  public @NotNull EventBus.Builder errorHandler(@NotNull ErrorHandler errorHandler) {
     this.errorHandler = errorHandler;
     return this;
   }
