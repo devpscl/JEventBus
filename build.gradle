@@ -1,14 +1,39 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
 group = 'net.devpscl'
 version = '1.0.0'
 
+sourceCompatibility = 17
+
 repositories {
+    maven {
+        url "http://repo.devpscl.de/repository/maven-releases/"
+        allowInsecureProtocol = true
+    }
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.jetbrains:annotations:24.0.1'
+    implementation('org.jetbrains:annotations:24.0.1')
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url "http://repo.devpscl.de/repository/maven-releases/"
+            credentials {
+                username credentialsUser
+                password credentialsPassphrase
+            }
+            allowInsecureProtocol = true
+        }
+    }
 }
