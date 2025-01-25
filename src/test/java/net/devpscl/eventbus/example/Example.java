@@ -14,6 +14,9 @@ public class Example {
     example.init();
     example.doSomething();
 
+    MultipleBusExample multipleBusExample = new MultipleBusExample();
+    multipleBusExample.init();
+    multipleBusExample.doSomething();
   }
 
   ///////////////////////////////////////////////////////////////////////////
