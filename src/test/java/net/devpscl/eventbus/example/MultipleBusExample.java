@@ -25,12 +25,12 @@ public class MultipleBusExample {
     System.out.println("Bus ?: " + event.message());
   }
 
-  @SubscribeEvent(tag = {"bus_a"})
+  @SubscribeEvent(tag = "bus_a")
   public void onBusAMessage(MessageEvent event) {
     System.out.println("Bus A: message");
   }
 
-  @SubscribeEvent(tag = {"bus_b"})
+  @SubscribeEvent(tag = "bus_b")
   public void onBusBMessage(MessageEvent event) {
     System.out.println("Bus B: message");
   }
