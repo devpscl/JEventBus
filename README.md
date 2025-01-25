@@ -62,3 +62,4 @@ public void onInputBefore(InputEvent e) {
   e.setCancelAction(false); //
 }
 ```
+Some examples: [Click Here](https://github.com/devpscl/JEventBus/tree/master/src/test/java/net/devpscl/eventbus/example)
