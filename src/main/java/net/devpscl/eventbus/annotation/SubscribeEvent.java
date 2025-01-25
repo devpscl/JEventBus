@@ -13,6 +13,6 @@ import java.lang.annotation.Target;
 public @interface SubscribeEvent {
 
   @NotNull EventPriority priority() default EventPriority.DEFAULT;
-  @NotNull String tag() default "";
+  @NotNull String[] tag() default "";
 
 }

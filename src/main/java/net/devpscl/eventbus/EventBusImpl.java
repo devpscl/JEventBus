@@ -80,7 +80,15 @@ class EventBusImpl implements EventBus {
         continue;
       }
       if(!tag.isEmpty()) {
-        if(!annotation.tag().equals(tag)) {
+        String[] tags = annotation.tag();
+        boolean found = false;
+        for (String str : tags) {
+          if(str.equals(tag)) {
+            found = true;
+            break;
+          }
+        }
+        if(!found) {
           continue;
         }
       }
