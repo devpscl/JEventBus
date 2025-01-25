@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("net.devpscl:jeventbus:1.0.0")
+    implementation("net.devpscl:jeventbus:1.1.0")
 }
 ```
 
