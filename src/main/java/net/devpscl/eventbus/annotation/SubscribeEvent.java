@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
+@SuppressWarnings("unused")
 public @interface SubscribeEvent {
 
   @NotNull EventPriority priority() default EventPriority.DEFAULT;
