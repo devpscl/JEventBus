@@ -114,6 +114,15 @@ public interface EventBus {
   }
 
   /**
+   * Create new event bus with default config.
+   * @see Builder default configuration
+   * @return the builder instance
+   */
+  static @NotNull EventBus createDefault() {
+    return builder().build();
+  }
+
+  /**
    * The interface Builder.
    * At default, listener priorities are disabled and
    * {@link net.devpscl.eventbus.util.ConsoleErrorHandler} is set as error handler.
