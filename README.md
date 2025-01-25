@@ -8,7 +8,8 @@ Simple and lightweight event bus library written in java.
 ```groovy
 repositories {
   maven {
-    url "https://repo.devpscl.de/repository/public"
+    url("http://repo.devpscl.de/repository/maven-public/")
+    allowInsecureProtocol = true
   }
 }
 
