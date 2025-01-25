@@ -156,6 +156,14 @@ class EventBusImpl implements EventBus {
     }
   }
 
+  @Override
+  public boolean isListenedTo(@NotNull Class<? extends Event> eventType) {
+    if(!map.containsKey(eventType)) {
+      return false;
+    }
+    return !map.get(eventType).isEmpty();
+  }
+
   private void dispatchDirect(@NotNull Event event) {
     List<Entry<?>> entryList = map.get(event.getClass());
     if(entryList == null) {

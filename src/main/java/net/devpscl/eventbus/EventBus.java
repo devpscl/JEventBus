@@ -105,6 +105,14 @@ public interface EventBus {
   @NotNull Collection<Class<? extends Event>> listeningEventTypes();
 
   /**
+   * Check if any listener is listen to event type.
+   *
+   * @param eventType the event class type
+   * @return state
+   * */
+  boolean isListenedTo(@NotNull Class<? extends Event> eventType);
+
+  /**
    * Create new builder
    *
    * @return the builder instance
